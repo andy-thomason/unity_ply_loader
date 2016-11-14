@@ -5,9 +5,9 @@ using System.Collections;
 public class PlyLoaderTest : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
-    Debug.Log("PLT");
     PlyLoader loader = new PlyLoader();
-    Mesh [] mesh = loader.load("2PTC_EI_bs_1.ply");
+    //Mesh [] mesh = loader.load("2PTC_EI_bs_1.ply");
+    Mesh [] mesh = loader.load("cube.ply");
 
     for (int i = 0; i != mesh.Length; ++i) {
       GameObject g = new GameObject();
